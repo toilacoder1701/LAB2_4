@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'EB Garamond', serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}  
+header{
+    position: relative;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px ;
+    margin-bottom: 2px;
+    background: rgb(250, 245, 245);
+    border-bottom: 1px solid rgba(0, 0, 0,0.5);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+header .logo img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    /* border-radius: 1000px; */
+    margin-top: -10px;
+}
+.Nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    position: relative  ;
+    top: 0;
+}
+.Nav ul li a{
+    margin: 10px ;
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #000;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+.fas{
+    margin-left: 5px;
+    position: relative;
+}
+
+section .container{
+    background: url(/27500633_2021150588154513_4256187912171869662_o.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh ;
+    max-height: 450px;
+}
+.container .content{
+    text-align: center;
+    display: block;
+}
+.content .header-content{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.content_col2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+
+/* ===== Signin ==== */
+
+
+
+section .Form{
+    margin: 50px auto 0 auto;
+    min-height: 50vh;
+    background: #fff;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.Form{
+    padding: 20px 50px;
+}
+.Form .form_content{
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+.Form form{
+    margin: 20px 0;
+}
+.Form form .name_detail{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+form .name_detail label{
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+form .name_detail input{
+    height: 45px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+form .button input{
+    margin-top: 10px;
+    height: 45px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+}
+.Form .link{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.Form .link a{
+    color: #333;
+}
+.Form .link a:hover{
+    text-decoration: underline;
+}
+
+
+/* ==== Lognup ==== */
+.gender .gender_detail{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.gender .category{
+    width: 70%;
+    
+}
+.gender .category label:not(:first-child){
+    display: inline-block;
+    margin-left:40px ;
+    margin-top: 10px;
+}
+.Form .input-box input:focus,
+.Form .input-box input:valid{
+    border-color:#5A3F37 ;
+}
+
+
+
+/* ====== Quote ====== */
+.quotes {  
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.scroll-to{
+    scroll-behavior: smooth;
+}
+.quote-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.quote-heading {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 34px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: calc(90% / 3);
+    padding: 25px;
+    height: 600px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.book__img {
+    object-fit:contain;
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;    
+}
+
+.quote {
+    margin-top: 32px;
+}
+
+.quote__heading {
+    margin-bottom: 28px;
+    font-size: 34px;
+}
+
+.quote__content {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.quote .book__name{
+    font-weight: 400;
+}
+.table, th, td{
+    border: 1px solid #000;
+    margin: auto;
+}
+.table{
+    margin-top: 100px;
+}
+th, td{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.info-heading{
+    margin: 30px 0 50px 100px;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    width: 20%;
+}
